@@ -40,9 +40,9 @@ class Fastphp
         $param = array();
 
         $url = $_SERVER['REQUEST_URI'];
-        // echo "<pre>";
-        // var_dump($_SERVER);exit;
-        // 清除?之后的内容
+        //echo "<pre>";
+        //var_dump($_SERVER['REQUEST_URI']);exit;
+        //清除?之后的内容
         $position = strpos($url, '?');
         $url = $position === false ? $url : substr($url, 0, $position);
         // 删除前后的“/”

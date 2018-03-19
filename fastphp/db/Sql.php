@@ -1,3 +1,4 @@
+
 <?php
 namespace fastphp\db;
 
@@ -160,7 +161,6 @@ class Sql
 
     	foreach($data as $key => $value)
     	{
-            var_dump($key);exit;
     		$fields[] = sprintf("`%s`", $key);
     		$names[] = sprintf(":%s", $key);
     	}
